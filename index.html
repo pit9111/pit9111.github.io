@@ -1,0 +1,509 @@
+<!--
+  Greetings!
+
+  This delightful template has been meticulously crafted and brought to life by Syed Mohsin. It is generously shared with the world, inviting you to unleash your creativity and tailor it to your heart's content.
+-->
+
+<!-- For any inquiries or collaborations reach out to me at devsyedmohsin@gmail.com -->
+
+<!--
+  Embrace the guidance inscribed within the comments below to fashion an awe-inspiring portfolio of your own.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Syed Mohsin's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://ossportfolio.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Syed Mohsin's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Syed Mohsin's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicons.png"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>E-Portfolio de Daniel DA SILVA</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Accueil</a></li>
+          <li class="nav-item"><a href="#propos">Logiciels</a></li>
+          <li class="nav-item"><a href="#parcours">Parcours</a></li>
+          <li class="nav-item"><a href="#projet">Projets</a></li>
+          <li class="nav-item"><a href="#comp">Compétences</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Daniel DA SILVA</span>
+            <span>Alternant en sciences des données</span>
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            Je suis actuellement chez INRIA en tant que alternant data-analyst 
+            et je suis en formation en BUT Sciences des données à l'IUT de Paris - Rives de Seine
+          </p>
+
+          <div class="header-btns">
+            <a href="#projet" class="btn btn-secondary">Voir les Projets</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Parcours</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">IUT de Paris - Rives de Seine</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  BUT Sciences des données
+                </p>
+                <p class="work-text">
+                  2022 - 2025
+                </p>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://iutparis-seine.u-paris.fr/" target="_blank" rel="noopener" class="link"
+                    >Site web de l'IUT</a
+                  >
+
+                </div>
+              </div>
+
+         <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="image2/UniversiteParisCite_IUTParis-RdS-removebg-preview.png"
+                  alt="IUT"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Université Paris-Est Créteil Val de Marne</h3>
+                <!-- Add small description of your project  -->
+
+                <p class="work-text">Première année de licence informatique</p>
+                <p class="work-text">
+                  2021 - 2022
+                </p>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://www.u-pec.fr/" target="_blank" rel="noopener" class="link"
+                    >Site web de l'université</a
+                  >
+
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="image2/téléchargement__11_-removebg-preview.png"
+                  alt="UPEC"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Lycée Marguerite Yourcenar</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Baccalauréat général -  Spécialités : Mathémathiques et NSI
+                </p>
+                <p class="work-text">
+                  2020 - 2021
+                </p>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://lyc-yourcenar-morangis.ac-versailles.fr/" target="_blank" rel="noopener" class="link"
+                    >Site web du lycée</a
+                  >
+
+                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  id="unique-image"
+                  loading="lazy"
+                  src="image2/logo-2023-fond-blanc.png"
+                  alt="contribute dev"
+                />
+              </picture>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
+
+      <section class="projet">
+        <div class="container">
+          <h2 class="h2" id="projet">My Articles</h2>
+          <div class="article-boxes">
+
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">JavaScript Default Function Parameters.</h3>
+                  <p class="article-text">
+                    In JavaScript when we call a function which expects some
+                    data to be passed in if you call that without passing
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a
+                  >
+
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">
+                    Free Open-source portfolio template for developers ✨
+                  </h3>
+                  <p class="article-text">
+                    A beautiful, minimal and accessible portfolio template for
+                    Developers which is completely free and Open Source.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="site.html" class="link" target="_blank" rel="noopener">Continue reading</a>
+                </div>
+                
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">HTML tips and tricks.</h3>
+                  <div class="article-text">
+                    In my very last article I shared some JavaScript tips and
+                    tricks In this article I will be covering HTML tips and
+                    tricks.
+                  </div>
+                </div>
+                <div class="article-info">
+                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a
+                  >
+
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">Compétences</h2>
+          <div class="skills-row">
+            <div class="skills-column">
+              <h3>Langages de Programmation</h3>
+              <ul>
+                <li>Python</li>
+                <li>R</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SAS</li>
+              </ul>
+            </div>
+            <div class="skills-column">
+              <h3>Analyse</h3>
+              <ul>
+                <li>Analyse univariée</li>
+                <li>Analyse multivariée</li>
+                <li>Aide à la décision</li>
+                <li>Visualisation</li>
+                <li>Traitement des données</li>
+              </ul>
+            </div>
+            <div class="skills-column">
+              <h3>Soft Skills</h3>
+              <ul>
+                <li>Communication</li>
+                <li>Travail en équipe</li>
+                <li>Gestion du temps</li>
+                <li>Autonomie</li>
+                <li>Adaptabilité</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>            
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Logiciels maîtrisés</h2>
+          <div class="logos">
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="image2\téléchargement-removebg-preview.png"
+                alt="R"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="image2\python-logo-removebg-preview.png"
+                alt="Python"
+                class="logo"
+              />
+
+              <img
+                loading="lazy"
+                src="image2\téléchargement__2_-removebg-preview.png"
+                alt="SQL"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="image2\téléchargement-removebg-preview (1).png"
+                alt="Tableau"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="image2\New_Power_BI_Logo.svg.png"
+                alt="Power BI"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="image2\téléchargement__1_-removebg-preview.png"
+                alt="Excel"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="image2\téléchargement__3_-removebg-preview.png"
+                alt="Access"
+                class="logo hide to-top"
+              /><img
+                loading="lazy"
+                src="image2\téléchargement__4_-removebg-preview.png"
+                alt="R Shiny"
+                class="logo"
+              /><img
+                loading="lazy"
+                src="image2\téléchargement__5_-removebg-preview.png"
+                alt="SAs"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="image2\téléchargement__7_-removebg-preview.png"
+                alt="Word"
+                class="logo hide to-top"
+              />
+              <img
+                loading="lazy"
+                src="image2\téléchargement__6_-removebg-preview.png"
+                alt="Power Point"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="image2\téléchargemeneet-removebg-preview.png"
+                alt="Jupyter Notebook"
+                class="logo hide to-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Me contacter</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <p class="contact-text" style="color: white;">
+                Vous êtes intéressé par une collaboration ou avez une question à me poser ?
+                 N'hésitez pas à me contacter. Que ce soit pour un projet , 
+                 une consultation technique, ou simplement pour échanger sur 
+                 la data-science, je suis toujours ouvert à de nouvelles opportunités.
+              </p>
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Nom</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="Télécharger le CV" href="CV_DA_SILVA_Daniel (4).pdf" target="_blank" rel="noopener noreferrer" download="Mon_CV_Nom_Prenom.pdf">
+                  <img
+                    loading="lazy"
+                    src="image2/fr-removebg-preview.png"
+                    alt="CV à télécharger"
+                  />
+                </a>
+              </li>
+              <li class="footer-link">
+                <a title="Télécharger le CV anglais" href="DA_SILVA_Daniel_CV (1).pdf" target="_blank" rel="noopener noreferrer" download="Mon_CV_Nom_Prenom.pdf">
+                  <img
+                    loading="lazy"
+                    src="image2/en-removebg-preview.png"
+                    alt="CV anglais à télécharger"
+                  />
+                </a>
+              </li>
+              
+
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/daniel-da-silva-50368a268" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="image2/téléchargement__10_-removebg-preview.png"
+                    alt="Linkedin"
+                /></a>
+              </li>
+
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - Portfolio réalisé par Daniel DA SILVA.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

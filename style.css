@@ -122,21 +122,7 @@ textarea {
   resize: none;
 }
 
-.article-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
-.article-box {
-  flex: 1 1 calc(33.333% - 10px); /* Ajuste la largeur de chaque article */
-  margin: 6px; /* Ajoute de l'espace entre les articles */
-  box-sizing: border-box; /* Pour inclure les marges et les bordures dans la taille totale de l'élément */
-}
-
-.article-box:nth-child(3n+1) {
-  clear: left;
-}
 
 /* --------------------------------- */
 /* ----- Typography -----*/
